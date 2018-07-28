@@ -1,4 +1,4 @@
-@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -87,6 +87,7 @@ body {
     -o-transition: none !important;
     transition: none !important; }
 
+/* Type */
 html {
   font-size: 16pt; }
   @media screen and (max-width: 1680px) {
@@ -102,10 +103,7 @@ html {
 body {
   color: #212931; }
 
-body,
-input,
-select,
-textarea {
+body, input, select, textarea {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 300;
   font-size: 1rem;
@@ -125,36 +123,24 @@ a {
   a:hover {
     border-bottom-color: transparent; }
 
-strong,
-b {
+strong, b {
   font-weight: 600; }
 
-em,
-i {
+em, i {
   font-style: italic; }
 
 p {
   text-align: justify;
   margin: 0 0 2rem 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
   text-transform: uppercase;
   margin: 0 0 1rem 0; }
-  h1 a,
-  h2 a,
-  h3 a,
-  h4 a,
-  h5 a,
-  h6 a {
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-bottom: 0;
     color: inherit;
     text-decoration: none; }
@@ -232,9 +218,7 @@ hr {
 .align-right {
   text-align: right; }
 
-input,
-select,
-textarea {
+input, select, textarea {
   color: #212931; }
 
 a {
@@ -244,16 +228,10 @@ a {
     border-bottom-color: transparent;
     color: #18bfef !important; }
 
-strong,
-b {
+strong, b {
   color: #212931; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #212931; }
 
 blockquote {
@@ -1332,7 +1310,7 @@ button,
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   border: 0;
-  border-radius: 3px;
+  border-radius: 26px;
   cursor: pointer;
   display: inline-block;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2159,6 +2137,7 @@ table.alt tbody tr td {
 .pagination span {
   color: #eeeeee; }
 
+/* Wrapper */
 #wrapper {
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -2179,9 +2158,10 @@ table.alt tbody tr td {
     background-image: url("../../images/overlay.png"), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
-    background-size: cover;
-    background-position: center, center, top center;
-    background-attachment: scroll, scroll, scroll;
+    background-size: auto,								auto,														100% auto;
+    background-position: center,								center,														top center;
+    background-repeat: repeat,								no-repeat,													no-repeat;
+    background-attachment: scroll,								scroll,														scroll;
     z-index: -1; }
     #wrapper > .bg.fixed {
       position: fixed;
@@ -2212,7 +2192,7 @@ table.alt tbody tr td {
     opacity: 1; }
   @media screen and (orientation: portrait) {
     #wrapper > .bg {
-      background-size: auto, auto, auto 175%; } }
+      background-size: auto,								auto,														auto 175%; } }
 
 /* Intro */
 #intro {
@@ -2254,9 +2234,7 @@ table.alt tbody tr td {
   text-align: center;
   z-index: 1;
   min-height: 100vh; }
-  #intro input,
-  #intro select,
-  #intro textarea {
+  #intro input, #intro select, #intro textarea {
     color: #ffffff; }
   #intro a {
     color: #ffffff;
@@ -2264,15 +2242,9 @@ table.alt tbody tr td {
     #intro a:hover {
       border-bottom-color: transparent;
       color: #18bfef !important; }
-  #intro strong,
-  #intro b {
+  #intro strong, #intro b {
     color: #ffffff; }
-  #intro h1,
-  #intro h2,
-  #intro h3,
-  #intro h4,
-  #intro h5,
-  #intro h6 {
+  #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
     color: #ffffff; }
   #intro blockquote {
     border-left-color: #ffffff; }
@@ -2424,9 +2396,7 @@ table.alt tbody tr td {
   position: relative;
   text-align: center;
   z-index: 2; }
-  #header input,
-  #header select,
-  #header textarea {
+  #header input, #header select, #header textarea {
     color: #ffffff; }
   #header a {
     color: #ffffff;
@@ -2434,15 +2404,9 @@ table.alt tbody tr td {
     #header a:hover {
       border-bottom-color: transparent;
       color: #18bfef !important; }
-  #header strong,
-  #header b {
+  #header strong, #header b {
     color: #ffffff; }
-  #header h1,
-  #header h2,
-  #header h3,
-  #header h4,
-  #header h5,
-  #header h6 {
+  #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
     color: #ffffff; }
   #header blockquote {
     border-left-color: #ffffff; }
@@ -2486,6 +2450,7 @@ table.alt tbody tr td {
         font-size: 1.75rem;
         border-width: 3px !important; } }
 
+/* Nav */
 #nav {
   color: #ffffff;
   display: -moz-flex;
@@ -2522,9 +2487,7 @@ table.alt tbody tr td {
   #nav ul.icons.alt li a.icon:hover:before {
     -webkit-box-shadow: inset 0 0 0 2px #18bfef;
     box-shadow: inset 0 0 0 2px #18bfef; }
-  #nav input,
-  #nav select,
-  #nav textarea {
+  #nav input, #nav select, #nav textarea {
     color: #ffffff; }
   #nav a {
     color: #ffffff;
@@ -2532,15 +2495,9 @@ table.alt tbody tr td {
     #nav a:hover {
       border-bottom-color: transparent;
       color: #18bfef !important; }
-  #nav strong,
-  #nav b {
+  #nav strong, #nav b {
     color: #ffffff; }
-  #nav h1,
-  #nav h2,
-  #nav h3,
-  #nav h4,
-  #nav h5,
-  #nav h6 {
+  #nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
     color: #ffffff; }
   #nav blockquote {
     border-left-color: #ffffff; }
@@ -2613,6 +2570,7 @@ table.alt tbody tr td {
     #nav {
       display: none; } }
 
+/* Main */
 #main {
   background-color: #ffffff;
   position: relative;
@@ -2632,8 +2590,7 @@ table.alt tbody tr td {
     padding: 8rem 8rem 6rem 8rem ; }
     #main > .post header.major > .date {
       margin-top: -2rem; }
-    #main > .post header.major > h1,
-    #main > .post header.major h2 {
+    #main > .post header.major > h1, #main > .post header.major h2 {
       font-size: 4rem;
       line-height: 1.1;
       margin: 0 0 2rem 0; }
@@ -2648,8 +2605,7 @@ table.alt tbody tr td {
         #main > .post header.major > .date {
           margin-top: -1rem;
           margin-bottom: 2rem; }
-        #main > .post header.major > h1,
-        #main > .post header.major h2 {
+        #main > .post header.major > h1, #main > .post header.major h2 {
           font-size: 2.5rem;
           line-height: 1.2;
           margin: 0 0 1.5rem 0; } }
@@ -2750,9 +2706,7 @@ table.alt tbody tr td {
   width: calc(100% - 4rem);
   max-width: 72rem;
   z-index: 2; }
-  #footer input,
-  #footer select,
-  #footer textarea {
+  #footer input, #footer select, #footer textarea {
     color: #717981; }
   #footer a {
     color: #717981;
@@ -2760,15 +2714,9 @@ table.alt tbody tr td {
     #footer a:hover {
       border-bottom-color: transparent;
       color: #18bfef !important; }
-  #footer strong,
-  #footer b {
+  #footer strong, #footer b {
     color: #717981; }
-  #footer h1,
-  #footer h2,
-  #footer h3,
-  #footer h4,
-  #footer h5,
-  #footer h6 {
+  #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #717981; }
   #footer blockquote {
     border-left-color: #e2e2e2; }
@@ -3054,9 +3002,7 @@ table.alt tbody tr td {
   width: calc(100% - 4rem);
   max-width: 72rem;
   z-index: 2; }
-  #copyright input,
-  #copyright select,
-  #copyright textarea {
+  #copyright input, #copyright select, #copyright textarea {
     color: #ffffff; }
   #copyright a {
     color: #ffffff;
@@ -3064,15 +3010,9 @@ table.alt tbody tr td {
     #copyright a:hover {
       border-bottom-color: transparent;
       color: #18bfef !important; }
-  #copyright strong,
-  #copyright b {
+  #copyright strong, #copyright b {
     color: #ffffff; }
-  #copyright h1,
-  #copyright h2,
-  #copyright h3,
-  #copyright h4,
-  #copyright h5,
-  #copyright h6 {
+  #copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
     color: #ffffff; }
   #copyright blockquote {
     border-left-color: #ffffff; }
@@ -3123,8 +3063,8 @@ table.alt tbody tr td {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   display: none;
   position: fixed;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 0.6rem;
+  right: 0.2rem;
   border: 0;
   color: #ffffff;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3261,6 +3201,12 @@ table.alt tbody tr td {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible; } }
 
-.space-xl {
-  color: #cdcdcd;
-  margin-bottom: 8px; }
+.contacts-section {
+  border-top: 2px solid #e0e0e0; }
+
+.contacts-section .button {
+  border-radius: 30px; }
+
+.rules_text hr {
+  border-color: #ccc;
+  width: 70%; }
