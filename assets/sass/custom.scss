@@ -1,6 +1,7 @@
-// .contacts-section{
-// 	border-top: 2px solid #e0e0e0;
-// }
+// Global.
+
+
+// Home.
 .logo_img_m {
     height: 7rem;
     opacity: 0.87;
@@ -10,7 +11,24 @@
 
 .contacts-section .button {
     border-radius: 30px;
+}
+
+#header a.logo{
+	border: 2px solid #fff !important;
+	font-size: 2rem;
+	font-weight: 300;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+	// background: linear-gradient(135deg, #6e8efb, #a777e3);
+	transition: background-color .3s ease, color 0.3s ease;
 } 
+
+#header a.logo:hover{
+	color: #fff !important;
+	border: 2px solid #141414 !important;
+	background-color: #141414 !important;
+}
+
 // Main 0
 .main0{
 	height: 80vh;
@@ -19,7 +37,8 @@
 .main0 h1{
 	font-size: 4rem;
 	font-weight: 300;
-	font-family: 'roboto', 'Open Sans', sans-serif;
+	text-align: center;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 

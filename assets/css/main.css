@@ -3213,13 +3213,30 @@ table.alt tbody tr td {
 .contacts-section .button {
   border-radius: 30px; }
 
+#header a.logo {
+  border: 2px solid #fff !important;
+  font-size: 2rem;
+  font-weight: 300;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  -webkit-transition: background-color .3s ease, color 0.3s ease;
+  -o-transition: background-color .3s ease, color 0.3s ease;
+  transition: background-color .3s ease, color 0.3s ease; }
+
+#header a.logo:hover {
+  color: #fff !important;
+  border: 2px solid #141414 !important;
+  background-color: #141414 !important; }
+
 .main0 {
   height: 80vh; }
 
 .main0 h1 {
   font-size: 4rem;
   font-weight: 300;
-  font-family: 'roboto', 'Open Sans', sans-serif; }
+  text-align: center;
+  font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 .rules_text hr {
   border-color: #ccc;
