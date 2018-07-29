@@ -1,11 +1,17 @@
-.contacts-section{
-	border-top: 2px solid #e0e0e0;
+// .contacts-section{
+// 	border-top: 2px solid #e0e0e0;
+// }
+
+.logo_img_m{
+	height: 7rem;
+	opacity: 0.87;
+	margin-bottom: 4rem;
+	border-radius: 99px;
 }
 
 .contacts-section .button{
 	border-radius: 30px;
 }
-
 
 // Rules and regulations
 
@@ -15,5 +21,11 @@
 }
 
 .logo_img{
-	height: 140px;
+	height: 140px;	
+}
+
+// Contacts.
+
+.contacts, .contacts .post, #nav ul.links li.active{
+	background-color: whitesmoke;
 }
