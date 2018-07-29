@@ -2158,11 +2158,14 @@ table.alt tbody tr td {
     background-image: url("../../images/overlay.png"), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
-    background-size: fill 100vh !important;
+    background-size: zoom 100vh !important;
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
     z-index: -1; }
+    @media (max-width: 600px) {
+      #wrapper > .bg {
+        background-size: auto 100vh !important; } }
     #wrapper > .bg.fixed {
       position: fixed;
       width: 100vw;
