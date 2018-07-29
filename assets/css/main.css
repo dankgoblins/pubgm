@@ -2158,7 +2158,7 @@ table.alt tbody tr td {
     background-image: url("../../images/overlay.png"), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
-    background-size: auto 100vh !important;
+    background-size: fill 100vh !important;
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
@@ -3210,6 +3210,14 @@ table.alt tbody tr td {
 .contacts-section .button {
   border-radius: 30px; }
 
+.main0 {
+  height: 80vh; }
+
+.main0 h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: 'roboto', 'Open Sans', sans-serif; }
+
 .rules_text hr {
   border-color: #ccc;
   width: 70%; }
@@ -3217,5 +3225,7 @@ table.alt tbody tr td {
 .logo_img {
   height: 140px; }
 
-.contacts, .contacts .post, #nav ul.links li.active {
+.contacts,
+.contacts .post,
+#nav ul.links li.active {
   background-color: whitesmoke; }

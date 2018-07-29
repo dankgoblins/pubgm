@@ -1,31 +1,41 @@
 // .contacts-section{
 // 	border-top: 2px solid #e0e0e0;
 // }
-
-.logo_img_m{
-	height: 7rem;
-	opacity: 0.87;
-	margin-bottom: 4rem;
-	border-radius: 99px;
+.logo_img_m {
+    height: 7rem;
+    opacity: 0.87;
+    margin-bottom: 4rem;
+    border-radius: 99px;
 }
 
-.contacts-section .button{
-	border-radius: 30px;
+.contacts-section .button {
+    border-radius: 30px;
+} 
+// Main 0
+.main0{
+	height: 80vh;
 }
+
+.main0 h1{
+	font-size: 4rem;
+	font-weight: 300;
+	font-family: 'roboto', 'Open Sans', sans-serif;
+}
+
 
 // Rules and regulations
-
-.rules_text hr{
-	border-color: #ccc;
-	width: 70%;
+.rules_text hr {
+    border-color: #ccc;
+    width: 70%;
 }
 
-.logo_img{
-	height: 140px;	
+.logo_img {
+    height: 140px;
 }
 
 // Contacts.
-
-.contacts, .contacts .post, #nav ul.links li.active{
-	background-color: whitesmoke;
+.contacts,
+.contacts .post,
+#nav ul.links li.active {
+    background-color: whitesmoke;
 }
