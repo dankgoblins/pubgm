@@ -3386,5 +3386,11 @@ table.alt tbody tr td {
 
 .contacts,
 .contacts .post,
-#nav ul.links li.active {
+#nav ul.links li.contact_l {
   background-color: whitesmoke; }
+
+#nav .contact_l a {
+  color: #141414 !important; }
+
+#nav ul.links .contact_l a:hover {
+  color: #18bfef !important; }
