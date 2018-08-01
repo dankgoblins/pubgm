@@ -1310,7 +1310,7 @@ button,
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   border: 0;
-  border-radius: 26px;
+  border-radius: 99px;
   cursor: pointer;
   display: inline-block;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3229,6 +3229,9 @@ table.alt tbody tr td {
   border: 2px solid #141414 !important;
   background-color: #141414 !important; }
 
+.main0 h1, .main0 > *, .main0 > .post.featured, .main0 > .posts, .main0 > footer {
+  text-align: center; }
+
 .main0 {
   height: 80vh;
   z-index: 2;
@@ -3236,55 +3239,45 @@ table.alt tbody tr td {
   max-width: 72rem;
   position: relative;
   width: calc(100% - 4rem);
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .main0 h1 {
   font-size: 4rem;
   font-weight: 300;
-  text-align: center;
-  font-family: 'Roboto', 'Open Sans', sans-serif; }
+  font-family: Roboto,'Open Sans',sans-serif; }
 
 .main0 > * {
-  padding: 4rem 4rem 2rem 4rem;
-  margin: 0;
-  text-align: center; }
+  padding: 4rem 4rem 2rem;
+  margin: 0; }
 
-.main0 > *:first-child {
+.main0 > :first-child {
   border-top: 0; }
 
-.main0 > footer {
-  text-align: center; }
-
 .main0 > .post {
-  padding: 8rem 8rem 6rem 8rem; }
+  padding: 8rem 8rem 6rem; }
 
 .main0 > .post header.major > .date {
   margin-top: -2rem; }
 
-.main0 > .post header.major > h1,
-.main0 > .post header.major h2 {
+.main0 > .post header.major h2, .main0 > .post header.major > h1 {
   font-size: 4rem;
   line-height: 1.1;
-  margin: 0 0 2rem 0; }
-
-.main0 > .post.featured {
-  text-align: center; }
+  margin: 0 0 2rem; }
 
 @media screen and (max-width: 1280px) {
   .main0 > .post {
-    padding: 6rem 4rem 4rem 4rem; } }
+    padding: 6rem 4rem 4rem; } }
 
 @media screen and (max-width: 736px) {
   .main0 > .post {
-    padding: 4rem 2rem 2rem 2rem; }
+    padding: 4rem 2rem 2rem; }
   .main0 > .post header.major > .date {
     margin-top: -1rem;
     margin-bottom: 2rem; }
-  .main0 > .post header.major > h1,
-  .main0 > .post header.major h2 {
+  .main0 > .post header.major h2, .main0 > .post header.major > h1 {
     font-size: 2.5rem;
     line-height: 1.2;
-    margin: 0 0 1.5rem 0; } }
+    margin: 0 0 1.5rem; } }
 
 .main0 > .posts {
   display: -moz-flex;
@@ -3303,7 +3296,6 @@ table.alt tbody tr td {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  text-align: center;
   width: 100%;
   padding: 0; }
 
@@ -3318,17 +3310,12 @@ table.alt tbody tr td {
   -ms-flex-grow: 0;
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
-  flex-grow: 0; }
-
-.main0 > .posts > * {
-  width: 50%; }
-
-.main0 > .posts > * {
+  flex-grow: 0;
   padding: 4rem;
   width: 50%; }
 
 .main0 > .posts > article {
-  border-color: #eeeeee;
+  border-color: #eee;
   border-left-width: 2px;
   border-style: solid;
   border-top-width: 2px;
@@ -3340,38 +3327,32 @@ table.alt tbody tr td {
 .main0 > .posts > article:nth-child(2n - 1) {
   border-left-width: 0; }
 
-.main0 > .posts > article:nth-child(-n + 2) {
+.main0 > .posts > article:nth-child(-n+2) {
   border-top-width: 0; }
 
 @media screen and (max-width: 980px) {
-  .main0 > .posts > * {
-    width: 50%; }
   .main0 > .posts > * {
     padding: 2.5rem;
     width: 50%; } }
 
 @media screen and (max-width: 736px) {
   .main0 > .posts > * {
-    width: 100%; }
-  .main0 > .posts > * {
     padding: 2rem;
     width: 100%; }
   .main0 > .posts > article:nth-child(2n - 1) {
     border-left-width: 2px; }
-  .main0 > .posts > article:nth-child(-n + 2) {
+  .main0 > .posts > article:nth-child(-n+2) {
     border-top-width: 2px; }
   .main0 > .posts > article:nth-child(n) {
     border-left-width: 0; }
-  .main0 > .posts > article:nth-child(-n + 1) {
+  .main0 > .posts > article:nth-child(-n+1) {
     border-top-width: 0; }
   .main0 > .posts > article .image {
     max-width: 25rem;
     margin-left: auto;
-    margin-right: auto; } }
-
-@media screen and (max-width: 736px) {
+    margin-right: auto; }
   .main0 > * {
-    padding: 2rem 2rem 0.1rem 2rem; } }
+    padding: 2rem 2rem .1rem; } }
 
 @media screen and (max-width: 480px) {
   .main0 {
