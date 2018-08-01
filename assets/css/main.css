@@ -3379,6 +3379,7 @@ table.alt tbody tr td {
 
 .rules_text hr {
   border-color: #ccc;
+  opacity: 0.68;
   width: 70%; }
 
 .logo_img {
