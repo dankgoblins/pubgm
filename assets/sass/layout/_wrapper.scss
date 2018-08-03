@@ -19,6 +19,7 @@
         background-position: center, center, top center;
         background-repeat: repeat, no-repeat, no-repeat;
         background-attachment: scroll, scroll, scroll;
+        filter: contrast(80%);
         z-index: -1;
         @media (max-width: 600px){
         	background-size: auto 100vh !important;

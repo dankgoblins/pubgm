@@ -2162,6 +2162,8 @@ table.alt tbody tr td {
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
+    -webkit-filter: contrast(80%);
+    filter: contrast(80%);
     z-index: -1; }
     @media (max-width: 600px) {
       #wrapper > .bg {
@@ -3204,36 +3206,15 @@ table.alt tbody tr td {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible; } }
 
-.logo_img_m {
-  height: 7rem;
-  opacity: 0.87;
-  margin-bottom: 4rem;
-  border-radius: 99px; }
-
-.contacts-section .button {
-  border-radius: 30px; }
-
-#header a.logo {
-  border: 2px solid #fff !important;
-  font-size: 2rem;
-  font-weight: 300;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-  -webkit-transition: background-color .3s ease, color 0.3s ease;
-  -o-transition: background-color .3s ease, color 0.3s ease;
-  transition: background-color .3s ease, color 0.3s ease; }
-
-#header a.logo:hover {
-  color: #fff !important;
-  border: 2px solid #141414 !important;
-  background-color: #141414 !important; }
-
-.main0 h1, .main0 > *, .main0 > .post.featured, .main0 > .posts, .main0 > footer {
+.main0 h1,
+.main0 > *,
+.main0 > .post.featured,
+.main0 > .posts,
+.main0 > footer {
   text-align: center; }
 
 .main0 {
-  height: 80vh;
+  max-height: 80vh;
   z-index: 2;
   margin: 0 auto;
   max-width: 72rem;
@@ -3244,7 +3225,7 @@ table.alt tbody tr td {
 .main0 h1 {
   font-size: 4rem;
   font-weight: 300;
-  font-family: Roboto,'Open Sans',sans-serif; }
+  font-family: Roboto, 'Open Sans', sans-serif; }
 
 .main0 > * {
   padding: 4rem 4rem 2rem;
@@ -3259,7 +3240,8 @@ table.alt tbody tr td {
 .main0 > .post header.major > .date {
   margin-top: -2rem; }
 
-.main0 > .post header.major h2, .main0 > .post header.major > h1 {
+.main0 > .post header.major h2,
+.main0 > .post header.major > h1 {
   font-size: 4rem;
   line-height: 1.1;
   margin: 0 0 2rem; }
@@ -3274,7 +3256,8 @@ table.alt tbody tr td {
   .main0 > .post header.major > .date {
     margin-top: -1rem;
     margin-bottom: 2rem; }
-  .main0 > .post header.major h2, .main0 > .post header.major > h1 {
+  .main0 > .post header.major h2,
+  .main0 > .post header.major > h1 {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1.5rem; } }
@@ -3357,6 +3340,46 @@ table.alt tbody tr td {
 @media screen and (max-width: 480px) {
   .main0 {
     width: 100%; } }
+
+.logo_img_m {
+  height: 7rem;
+  opacity: 0.87;
+  margin-bottom: 4rem;
+  border-radius: 99px; }
+
+.contacts-section .button {
+  border-radius: 30px; }
+
+#header a.logo {
+  border: 2px solid #fff !important;
+  font-size: 2rem;
+  font-weight: 300;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  -webkit-transition: background-color .3s ease, color 0.3s ease;
+  -o-transition: background-color .3s ease, color 0.3s ease;
+  transition: background-color .3s ease, color 0.3s ease; }
+
+#header a.logo:hover {
+  color: #fff !important;
+  border: 2px solid #141414 !important;
+  background-color: #141414 !important; }
+
+.main0 {
+  font-weight: 400;
+  font-family: 'Roboto', 'Open Sans', sans-serif; }
+
+.main0 h1 {
+  font-weight: 400; }
+
+.main0 h3 {
+  border-top: none !important;
+  font-weight: 400;
+  font-family: inherit; }
+
+.main0 div {
+  border-top: none !important; }
 
 .rules_text hr {
   border-color: #ccc;
