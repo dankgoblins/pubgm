@@ -114,6 +114,12 @@
     padding-top: 10vh;
 }
 
+#main.main2 hr{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
 // Rules and regulations
 .rules_text hr {
     border-color: #ccc;
@@ -136,4 +142,34 @@
 }
 #nav ul.links .contact_l a:hover {
     color: #18bfef !important;
+}
+
+#main.contacts{
+    font-family: 'Merriweather','Roboto', 'Open Sans', sans-serif;
+}
+
+#main.contacts h1{
+    padding-bottom: 6px;
+}
+
+#main.contacts hr{
+    width: 36%;
+    margin: 0 auto;
+    margin-bottom: 2.16rem;
+}
+
+#main.contacts .post .container{
+    margin: 0 auto;
+    opacity: 0.88;
+    width: 76%;
+}
+
+#main.contacts p{
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    #main.contacts .post .container{
+        width: 90vw !important;
+    }
 }

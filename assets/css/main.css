@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3431,6 +3432,11 @@ table.alt tbody tr td {
 #main.main2 {
   padding-top: 10vh; }
 
+#main.main2 hr {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem; }
+
 .rules_text hr {
   border-color: #ccc;
   opacity: 0.68;
@@ -3449,3 +3455,26 @@ table.alt tbody tr td {
 
 #nav ul.links .contact_l a:hover {
   color: #18bfef !important; }
+
+#main.contacts {
+  font-family: 'Merriweather','Roboto', 'Open Sans', sans-serif; }
+
+#main.contacts h1 {
+  padding-bottom: 6px; }
+
+#main.contacts hr {
+  width: 36%;
+  margin: 0 auto;
+  margin-bottom: 2.16rem; }
+
+#main.contacts .post .container {
+  margin: 0 auto;
+  opacity: 0.88;
+  width: 76%; }
+
+#main.contacts p {
+  text-align: center; }
+
+@media (max-width: 700px) {
+  #main.contacts .post .container {
+    width: 90vw !important; } }
