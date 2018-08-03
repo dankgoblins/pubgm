@@ -28,26 +28,92 @@
 
 // Main0
 
-.main0{
+#main.main0{
+    height: 100vh !important;
     font-weight: 400;
+    padding-top: 16vh;
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
-.main0 h1{
+#main.main0 h1{
     font-weight: 400;
+    padding-bottom: 0px;
 }
 
 .main0 h3{
     border-top: none !important;
     font-weight: 400;
     font-family:inherit;
+    padding-top: 5% !important;
 }
-.main0 div{
-    border-top: none !important;
+
+#main.main0 .button_d{
+    border-top: solid 0px #eeeeee;
+    margin: 0 auto !important;
+    width: 80%;
+    margin-top: 4vh !important;
+}
+
+
+#main.main0 > .button_d > div{
+    border-top: none;
+    display: inline-block;
+    margin: 0.4rem;
+    padding-left: 0px;
+}
+
+#main.main0 > .button_d > div > .button{
+    border-radius: 1px;
+    background-color: #141414;
+    color: #fff !important;
+    font-weight: 300 !important;
+    font-family: inherit;
+}
+
+#main.main0 > .button_d > div > .button:hover{
+    background-color: #18bfef !important;
+    color: #000 !important;
+}
+
+#main.main0 > .button_d > div > a.twitch{
+    background-color: #6542A5;
+    box-shadow: none !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+#main.main0 > .button_d > div > a.youtube{
+    background-color: #E12525;
+    box-shadow: none !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 700px){
+    #main.main0 .button_d{
+        width: 100%;
+    }
+    #main.main0 > .button_d > div > .button{
+        font-size: 0.82rem;
+    }
+    #main.main0 > .button_d > div > a.twitch{
+        box-shadow: none !important;
+        -webkit-font-smoothing: antialiased;
+    }
+    #main.main0 > .button_d > div > a.twitch{ 
+    }
+    #main.main0 > .button_d > div > a.youtube{
+
+    }
 }
 
 // Upcomming section
 
+#main.main2 *{
+    text-align: center !important;
+}
+
+#main.main2{
+    padding-top: 10vh;
+}
 
 // Rules and regulations
 .rules_text hr {
