@@ -3375,7 +3375,7 @@ table.alt tbody tr td {
     min-height: 80vh; } }
 
 #main.main0 {
-  min-height: 1100px !important;
+  min-height: 1020px !important;
   font-weight: 400;
   padding-top: 80px;
   z-index: 11;
@@ -3418,8 +3418,21 @@ table.alt tbody tr td {
   border-radius: 1px;
   background-color: #141414;
   color: #fff !important;
-  font-weight: 300 !important;
-  font-family: inherit; }
+  font-weight: 400 !important;
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased; }
+
+#main.main0 > .button_d > div > a.time {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+#main.main0 > .button_d > div > a.rules {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+
+#main.main0 > .button_d > div > a.previous {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
 
 #main.main0 > .button_d > div > .button:hover {
   background-color: #18bfef !important;
@@ -3436,14 +3449,16 @@ table.alt tbody tr td {
 #main.main0 > .button_d > div > a.twitch {
   background-color: #6542A5;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  -webkit-font-smoothing: antialiased; }
+  box-shadow: none !important; }
 
 #main.main0 > .button_d > div > a.youtube {
   background-color: #E12525;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  -webkit-font-smoothing: antialiased; }
+  box-shadow: none !important; }
+
+@media (min-width: 1680px) {
+  #main.main0 {
+    min-height: 1220px !important; } }
 
 @media (max-width: 700px) {
   #main.main0 {
@@ -3465,7 +3480,10 @@ table.alt tbody tr td {
   text-align: center !important; }
 
 #main.main2 {
-  padding-top: 0vh; }
+  padding-top: 0px; }
+
+#main.main2 article.featured {
+  border-top: none; }
 
 #main.main2 .button {
   border-radius: 1px;
@@ -3492,8 +3510,6 @@ table.alt tbody tr td {
   border-radius: 4px; }
 
 @media (max-width: 700px) {
-  #main.main2 {
-    padding-top: 100px; }
   #main.main2 .disclamer_pp {
     margin: 0; } }
 
