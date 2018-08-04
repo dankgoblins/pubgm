@@ -12,14 +12,14 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: _palette(wrapper-bg);
+        background-color: #000;
         background-image: url('../../images/overlay.png'), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../images/low.jpg');
         // background-size: cover;
         background-size: zoom 100vh !important;
         background-position: center, center, top center;
         background-repeat: repeat, no-repeat, no-repeat;
         background-attachment: scroll, scroll, scroll;
-        filter: contrast(80%);
+        filter: brightness(0.5);
         z-index: -1;
         @media (max-width: 600px){
         	background-size: auto 100vh !important;

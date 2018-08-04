@@ -1,5 +1,10 @@
 // Global.
 // Home.
+
+#intro{
+     min-height: initial;
+}
+
 .logo_img_m {
     height: 7rem;
     opacity: 0.87;
@@ -26,11 +31,21 @@
     background-color: #141414 !important;
 }
 
+@media screen and (max-width: 736px){
+    #intro{
+        min-height: 80vh;
+    }
+}
+
+
 // Main0
 #main.main0 {
-    height: 100vh !important;
+    min-height: 1100px !important;
     font-weight: 400;
-    padding-top: 16vh;
+    padding-top: 80px;
+    z-index: 11;
+    border: none;
+    box-shadow: none;
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
@@ -46,11 +61,18 @@
     padding-top: 5% !important;
 }
 
+#main.main0 iframe {
+    border-top: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 #main.main0 .button_d {
     border-top: solid 0px #eeeeee;
     margin: 0 auto !important;
     width: 80%;
-    margin-top: 4vh !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
@@ -96,8 +118,18 @@
 }
 
 @media (max-width: 700px) {
+    #main.main0 {
+        padding-top: 50px;
+    }
+    #main.main0 h1 {
+        padding-bottom: 20px;
+    }
+    #main.main0 iframe {
+        margin-top: 4vh;
+    }
     #main.main0 .button_d {
         width: 100%;
+        margin-top: 4vh !important;
     }
     #main.main0>.button_d>div>.button {
         font-size: 0.82rem;
@@ -107,12 +139,12 @@
         width: 14% !important;
     }
     #main.main0>.button_d>div>a.twitch {
-        padding-left: 4.5vh;
-        padding-right: 4.5vh;
+        // padding-left: 4.5vh;
+        // padding-right: 4.5vh;
     }
     #main.main0>.button_d>div>a.youtube {
-        padding-left: 5vh;
-        padding-right: 5vh;
+        // padding-left: 5vh;
+        // padding-right: 5vh;
     }
 }
 
@@ -122,16 +154,16 @@
 }
 
 #main.main2 {
-    padding-top: 20vh;
+    padding-top: 0vh;
 }
 
-#main.main2 .button{
+#main.main2 .button {
     border-radius: 1px;
     font-weight: 400 !important;
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
-#main.main2 .button:hover{
+#main.main2 .button:hover {
     background-color: #141414;
     color: #fff !important;
     box-shadow: inset 0 0 0 2px #141414;
@@ -148,11 +180,15 @@
 #main.main2 .disclamer_pp {
     background-color: #FDD10080;
     padding: 4px 1.8rem;
-    margin: 0 20%; 
+    margin: 0 20%;
+    border-radius: 4px;
 }
 
-@media (max-width: 700px){
-    #main.main2 .disclamer_pp{
+@media (max-width: 700px) {
+    #main.main2 {
+        padding-top: 100px;
+    }
+    #main.main2 .disclamer_pp {
         margin: 0;
     }
 }

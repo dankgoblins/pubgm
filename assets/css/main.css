@@ -2140,11 +2140,11 @@ table.alt tbody tr td {
 
 /* Wrapper */
 #wrapper {
-  -moz-transition: opacity 0.5s ease;
-  -webkit-transition: opacity 0.5s ease;
-  -ms-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   position: relative;
   z-index: 1;
   overflow: hidden; }
@@ -2154,7 +2154,7 @@ table.alt tbody tr td {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #212931;
+    background-color: #000;
     background-image: url("../../images/overlay.png"), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
     background-image: url("../../images/overlay.png"), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/low.jpg");
@@ -2163,8 +2163,8 @@ table.alt tbody tr td {
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
-    -webkit-filter: contrast(80%);
-    filter: contrast(80%);
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
     z-index: -1; }
     @media (max-width: 600px) {
       #wrapper > .bg {
@@ -3110,14 +3110,14 @@ table.alt tbody tr td {
   -webkit-transform: translateX(20rem);
   -ms-transform: translateX(20rem);
   transform: translateX(20rem);
-  -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  -webkit-transition: visibility 0.5s, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
-  transition: visibility 0.5s, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
-  -o-transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  -moz-transition: -moz-transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+  -webkit-transition: -webkit-transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+  -ms-transition: -ms-transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+  -webkit-transition: visibility 0.3s, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: visibility 0.3s, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
   display: none;
   -webkit-overflow-scrolling: touch;
   background: #ffffff;
@@ -3342,6 +3342,9 @@ table.alt tbody tr td {
   .main0 {
     width: 100%; } }
 
+#intro {
+  min-height: initial; }
+
 .logo_img_m {
   height: 7rem;
   opacity: 0.87;
@@ -3367,10 +3370,18 @@ table.alt tbody tr td {
   border: 2px solid #141414 !important;
   background-color: #141414 !important; }
 
+@media screen and (max-width: 736px) {
+  #intro {
+    min-height: 80vh; } }
+
 #main.main0 {
-  height: 100vh !important;
+  min-height: 1100px !important;
   font-weight: 400;
-  padding-top: 16vh;
+  padding-top: 80px;
+  z-index: 11;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 #main.main0 h1 {
@@ -3383,11 +3394,19 @@ table.alt tbody tr td {
   font-family: inherit;
   padding-top: 5% !important; }
 
+#main.main0 iframe {
+  border-top: none;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
 #main.main0 .button_d {
   border-top: solid 0px #eeeeee;
   margin: 0 auto !important;
   width: 80%;
-  margin-top: 4vh !important; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 #main.main0 > .button_d > div {
   border-top: none;
@@ -3427,25 +3446,26 @@ table.alt tbody tr td {
   -webkit-font-smoothing: antialiased; }
 
 @media (max-width: 700px) {
+  #main.main0 {
+    padding-top: 50px; }
+  #main.main0 h1 {
+    padding-bottom: 20px; }
+  #main.main0 iframe {
+    margin-top: 4vh; }
   #main.main0 .button_d {
-    width: 100%; }
+    width: 100%;
+    margin-top: 4vh !important; }
   #main.main0 > .button_d > div > .button {
     font-size: 0.82rem; }
   .button_d hr {
     opacity: 0.60 !important;
-    width: 14% !important; }
-  #main.main0 > .button_d > div > a.twitch {
-    padding-left: 4.5vh;
-    padding-right: 4.5vh; }
-  #main.main0 > .button_d > div > a.youtube {
-    padding-left: 5vh;
-    padding-right: 5vh; } }
+    width: 14% !important; } }
 
 #main.main2 * {
   text-align: center !important; }
 
 #main.main2 {
-  padding-top: 20vh; }
+  padding-top: 0vh; }
 
 #main.main2 .button {
   border-radius: 1px;
@@ -3468,9 +3488,12 @@ table.alt tbody tr td {
 #main.main2 .disclamer_pp {
   background-color: #FDD10080;
   padding: 4px 1.8rem;
-  margin: 0 20%; }
+  margin: 0 20%;
+  border-radius: 4px; }
 
 @media (max-width: 700px) {
+  #main.main2 {
+    padding-top: 100px; }
   #main.main2 .disclamer_pp {
     margin: 0; } }
 
