@@ -250,3 +250,13 @@
 		}
 
 })(jQuery);
+
+//  Custom
+
+function noEmuFunc(){
+	alert("This match is only for mobile users and not for those who are using pc emulators to play the game. Players on emulators sometimes have significant advantage over mobile users as they get more view angle and higher draw distance while getting the advantage of being able to walking aiming and shooting at the same time. Please DO NOT register here if you are using emulator or else you will be disqualified.");
+}
+
+function emuAllFunc(){
+	alert("Emulators are allowed in this match!");
+}
