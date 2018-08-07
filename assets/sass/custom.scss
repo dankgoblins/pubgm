@@ -293,23 +293,26 @@
 // reg.html page
 
 .reg_div{
-    display: block;
-    // background: pink;
+    display: inline-block;
+}
+
+.reg h2{
+    white-space: nowrap;
 }
 
 .reg h5{
+    width: 80%;
     font-weight:300;
-    width: 50%;
     margin-left: 50%;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 2rem;
     font-family: inherit;
-    transform: translateX(-50%);
-    box-shadow: 0px 2px 20px 0px #bbb;
     transition: all 0.3s ease;
+    transform: translateX(-50%);
+    box-shadow: 0px 1px 20px 0px #aaa;
 }
 
 .reg h5:hover{
@@ -325,8 +328,20 @@
     box-sizing: border-box;
 }
 
+.reg hr{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 @media (max-width: 700px) {
     .reg h5{
-        width: 100%;
+        box-shadow: 0px 2px 20px 0px #ccc;
+    }
+    .reg .button{
+        transform: scale(1.2);
+    }
+    .reg hr{
+        width: 90%;
     }
 }

@@ -3575,26 +3575,29 @@ table.alt tbody tr td {
     width: 90vw !important; } }
 
 .reg_div {
-  display: block; }
+  display: inline-block; }
+
+.reg h2 {
+  white-space: nowrap; }
 
 .reg h5 {
+  width: 80%;
   font-weight: 300;
-  width: 50%;
   margin-left: 50%;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 2rem;
   font-family: inherit;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-box-shadow: 0px 2px 20px 0px #bbb;
-  box-shadow: 0px 2px 20px 0px #bbb;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  -webkit-box-shadow: 0px 1px 20px 0px #aaa;
+  box-shadow: 0px 1px 20px 0px #aaa; }
 
 .reg h5:hover {
   -webkit-box-shadow: 0px 2px 20px 0px #777;
@@ -3608,6 +3611,20 @@ table.alt tbody tr td {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.reg hr {
+  width: 50%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
 @media (max-width: 700px) {
   .reg h5 {
-    width: 100%; } }
+    -webkit-box-shadow: 0px 2px 20px 0px #ccc;
+    box-shadow: 0px 2px 20px 0px #ccc; }
+  .reg .button {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .reg hr {
+    width: 90%; } }
