@@ -302,6 +302,7 @@
 
 .reg h5{
     width: 80%;
+    opacity: 0.88;
     font-weight:300;
     margin-left: 50%;
     padding-top: 6px;
@@ -312,7 +313,7 @@
     font-family: inherit;
     transition: all 0.3s ease;
     transform: translateX(-50%);
-    box-shadow: 0px 1px 20px 0px #aaa;
+    box-shadow: 0px 1px 25px 0px #ccc;
 }
 
 .reg h5:hover{
@@ -321,11 +322,11 @@
 }
 
 .reg .button{
-    border-radius: 1px;
-    border-top: solid 0px #eeeeee;
-    margin: 0 auto !important;
-    -webkit-box-sizing: border-box;
+    border-radius: 0px;
     box-sizing: border-box;
+    margin: 0 auto !important;
+    border-top: solid 0px #eeeeee;
+    -webkit-box-sizing: border-box;
 }
 
 .reg hr{
@@ -336,7 +337,7 @@
 
 @media (max-width: 700px) {
     .reg h5{
-        box-shadow: 0px 2px 20px 0px #ccc;
+        box-shadow: 0px 2px 22px 0px #ccc;
     }
     .reg .button{
         transform: scale(1.2);
