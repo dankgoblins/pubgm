@@ -2171,17 +2171,6 @@ table.alt tbody tr td {
       width: 100vw;
       height: 100vh; }
   #wrapper.fade-in:before {
-    pointer-events: none;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    -moz-transition-delay: 0.75s;
-    -webkit-transition-delay: 0.75s;
-    -ms-transition-delay: 0.75s;
-    -o-transition-delay: 0.75s;
-    transition-delay: 0.75s;
     background: #1e252d;
     content: '';
     display: block;
